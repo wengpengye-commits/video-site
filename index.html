@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>同學專用影片</title>
+</head>
+<body>
+  <h2>請輸入密碼</h2>
+  <input type="password" id="pw">
+  <button onclick="check()">進入</button>
+
+  <script>
+    function check() {
+      if (document.getElementById("pw").value === "class259") {
+        window.location.href = "video.html";
+      } else {
+        alert("密碼錯誤");
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>影片播放</title>
+</head>
+<body>
+  <h1>班級影片</h1>
+
+  <video controls width="720">
+    <source src="video.mp4" type="video/mp4">
+    你的瀏覽器不支援影片播放
+  </video>
+
+</body>
+</html>
